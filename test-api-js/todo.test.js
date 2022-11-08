@@ -33,8 +33,8 @@ describe('todo test suite', () => {
     })
  
     test("update_todo(id, todo) ", () =>{
-       expect(todo_service.update_todo().todo[2]).toEqual({
-       "title": "T1","description": "D3","done":true})
+       expect(todo_service.update_todo().todo[1]).toEqual({
+       "title": "T2","description": "D3","done":true})
    })
 
 

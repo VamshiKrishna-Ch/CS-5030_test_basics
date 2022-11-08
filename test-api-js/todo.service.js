@@ -36,9 +36,8 @@ class todoservice{
     }
 
     delete_todo(id){
-        id=3
         console.log("Before deleting : ",this.todos)
-        this.todos.todo.splice(id)
+        this.todos.todo.splice(3)
         console.log("After deleting : ",this.todos)
         return this.todos
 
@@ -48,11 +47,12 @@ class todoservice{
         // Your code here
         //todo={"title" : "T2", "description": "D2", "done":false}
         
-         id=2
-         //let ElementIndex = this.todos.todo.findIndex((todo) => todo.id == id);
+         id=1
          console.log("Before update: ", this.todos.todo[id]);
-         this.todos.todo[id].description = "D3";
          this.todos.todo[id].done = true;
+         this.todos.todo[id].description = "D3";
+         this.todos.todo[id].title = "T2"
+         
          console.log("After update: ", this.todos.todo[id]);
          return this.todos
 
